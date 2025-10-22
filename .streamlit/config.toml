@@ -3,6 +3,7 @@ port = 8503
 enableCORS = false
 headless = true
 enableXsrfProtection = false
+watchFiles = false   # add this line
 
 [browser]
 gatherUsageStats = false
