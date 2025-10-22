@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-3.11
-=======
 python-3.13.9
-
->>>>>>> b43a4c0 (Fix build error by using Python 3.13)
