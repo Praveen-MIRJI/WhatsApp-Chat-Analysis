@@ -164,6 +164,20 @@ def activity_heatmap(selected_user,df):
 
     return user_heatmap
 
+def detect_time_format(df):
+    """
+    Detect if the chat uses 12-hour or 24-hour format based on the data
+    """
+    if df.empty:
+        return "Unknown"
+    
+    # Check if any hour is > 12 (indicates 24-hour format)
+    max_hour = df['hour'].max()
+    if max_hour > 12:
+        return "24-hour format"
+    else:
+        return "12-hour format"
+
 
 
 

@@ -77,6 +77,15 @@ st.markdown("""
         border-radius: 10px;
         margin: 1rem 0;
     }
+    
+    .time-format-info {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        padding: 1rem;
+        border-radius: 10px;
+        color: white;
+        margin: 1rem 0;
+        text-align: center;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -100,6 +109,15 @@ if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
+
+    # Detect and display time format
+    time_format = helper.detect_time_format(df)
+    st.sidebar.markdown(f"""
+    <div class="time-format-info">
+        <h4>🕐 Time Format Detected</h4>
+        <p><strong>{time_format}</strong></p>
+    </div>
+    """, unsafe_allow_html=True)
 
     # fetch unique users
     user_list = df['user'].unique().tolist()
