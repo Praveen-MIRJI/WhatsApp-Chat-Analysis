@@ -2,7 +2,7 @@ streamlit==1.28.1
 matplotlib==3.7.2
 seaborn==0.12.2
 urlextract==1.8.0
-wordcloud==1.9.2
+git+https://github.com/amueller/word_cloud.git
 pandas==2.0.3
 emoji==2.8.0
 plotly==5.15.0
