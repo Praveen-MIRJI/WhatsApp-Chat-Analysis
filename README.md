@@ -7,8 +7,7 @@ A comprehensive Streamlit application for analyzing WhatsApp chat data with beau
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## 🚀 Live Demo
-
-[![Deploy on Streamlit Cloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://whatsapp-chat-analysis-wmvk6oxhz78mapphhr5qc3q.streamlit.app/)
+https://whatsapp-chat-analysis-wmvk6oxhz78mapphhr5qc3q.streamlit.app/
 
 ## ✨ Features
 
